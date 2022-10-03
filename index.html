@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <style>
+            body{
+                margin: 0;
+            }
+            .bgimage{
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                background-image: url('img1.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                animation: bgChange 20s linear infinite;
+            }
+            @keyframes bgChange{
+                0%{
+                    background-image: url(img1.jpg);
+                }
+                25%{
+                    background-image: url(img3.jpg);
+                }
+                45%{
+                    background-image: url(jpg.jpg);
+                }
+                50%{
+                    background-image: url(img1.jpg);
+                }
+                70%{
+                    background-image: url(img2.jpg);
+                }
+                75%{
+                    background-image: url(img3.jpg);
+                }
+                95%{
+                    background-image: url(jpg.jpg);
+                }
+            }
+            .overlay{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                left: 0px;
+                background-color: rgba(o, o, o, o.3);
+            }
+            .content{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                z-index: 2;
+            }
+            .content h1{
+                font-size: 60px;
+                margin-bottom: 0px;
+                color: black;
+            }
+            .content p{
+                font-size: 30px;
+                width: 60%;
+                padding-bottom: 10px;
+                text-align: center;
+                color: black;
+            }
+            .content a{
+                color: white;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                background-color: brown;
+                padding: 14px 22px;
+                text-transform: uppercase;
+                border-radius: 25px;
+                transition: 3s;
+            }
+            .content a:hover{
+                background-color: rgb(119, 31, 31);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bgimage">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Profile Dosen dan Pengurus HIMA Game Tech</h1>
+                <p>Untuk mengecek bisa klik icon di bawah ini</p>
+                <a href="profile.html">Check Profile</a>
+            </div>
+        </div>
+    </body>
+</html>
